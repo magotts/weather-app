@@ -56,4 +56,6 @@ document
     }
   });
 
+
+// default city
 weather.fetchWeather("Markham");
