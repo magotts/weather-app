@@ -23,6 +23,13 @@ body {
   margin: 1em;
 }
 
+.logo {
+  width: 350px;
+  height: 350px;
+  margin: 0;
+  padding-left: 25px;
+}
+
 .search {
   display: flex;
   align-items: center;
