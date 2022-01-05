@@ -1,5 +1,10 @@
+
+// require('dotenv').config()
+
+const weatherKey = '233e35eeac5549094a2230d6e8463c06';
+
 let weather = {
-  apiKey: "233e35eeac5549094a2230d6e8463c06",
+  apiKey: weatherKey,
   fetchWeather: function (city) {
     fetch(
       "https://api.openweathermap.org/data/2.5/weather?q=" +
@@ -21,7 +26,6 @@ let weather = {
     const { icon, description } = data.weather[0];
     const { temp, humidity } = data.main;
     const { speed } = data.wind;
-    console.log(name, icon, description, temp, humidity, speed);
     document.querySelector(".city").innerText = "Weather in " + name;
     document.querySelector(".icon").src =
       "https://openweathermap.org/img/wn/" + icon + ".png";
